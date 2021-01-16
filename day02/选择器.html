@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <p id="p1">  alex      </p>
+            <ul>
+                <li class="i1">3</li>
+                <li class="i2">4</li>
+                <li>5</li>
+            </ul>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        //id
+        console.log($('#p1'));
+        //class
+        console.log($('.box'));
+        //标签
+
+        //后代
+        console.log($('.box #p1'));
+        console.log($('.box li'));
+        //子代
+        //+
+        console.log($('.i1+.i2'));
+        console.log($('.i2+li'));
+        console.log($('.i2~li'));
+        //~
+        //组合
+        console.log($('ul li:first'));
+        console.log($('ul li:last'));
+        console.log($('ul li:even'));
+        console.log($('ul li:odd'));
+        console.log($('ul li:eq(0)').text());
+        console.log($('ul li:not(.i2)'));
+
+    </script>
+</body>
+</html>
