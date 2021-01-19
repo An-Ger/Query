@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <h3>???</h3>
+    <div class="box"> </div>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      $(function () {
+          $('.box').append($('h3')) //如果是网页中的元素，会出现移动现象
+          $('<h4>!</h4>').appendTo('.box').css('color', 'green').click (function () {
+              console.log($(this).text());
+          });
+      });
+    </script>
+  </body>
+</html>
